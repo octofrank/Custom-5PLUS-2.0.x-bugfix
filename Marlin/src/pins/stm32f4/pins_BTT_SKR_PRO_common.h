@@ -93,11 +93,13 @@
   #if Z_HOME_DIR < 0
     #define Z_MAX_PIN                       PG5   // E2
   #else
-    #define Z_MIN_PIN                       PG5   // E2
+    //#define Z_MIN_PIN                       PG5   // E2
+    #define Z_MIN_PIN                       PA2   // E2
   #endif
 #else
-  #define Z_MIN_PIN                         PG8   // Z-
-  #define Z_MAX_PIN                         PG5   // E2
+  //#define Z_MIN_PIN                         PG8   // Z-
+  #define Z_MIN_PIN                         PA2   // Z-
+//  #define Z_MAX_PIN                         PG5   // E2
 #endif
 
 //
